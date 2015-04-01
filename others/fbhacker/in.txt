@@ -1,0 +1,36 @@
+MACRO proc1(a1 ,b1 ,c1,d1)
+	a1=b1*c1;
+	c1=d1*a1;
+	d1=c1*a1;
+	
+MEND;
+
+
+
+MACRO proc2(arg1,arg2,arg3)
+
+	arg2=arg3+arg1;
+    arg1=arg3+arg1;
+    arg3=arg1*arg1;
+
+MEND;
+
+
+MAIN
+	
+	int arun=5;
+	int p2,q2,r2,s2,ab3,bc4,cd5;
+	p2=4;
+	q2=5;
+	r2=6;
+	s2=1;
+	
+	proc1(p2,q2,r2,s2);
+	ab3=p2+q2*r2;
+	bc4=p2*s3;
+	cd4=s2;
+	
+	proc2(ab3,bc4,cd5);
+	cout<<"Output is "<<ab3<<bc4;
+
+END MAIN
